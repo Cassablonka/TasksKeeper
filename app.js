@@ -86,6 +86,6 @@ app.post("/miscellaneous", function(req,res){
 });
 
 
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
   console.log("This server is running on port number 3000.");
 });
