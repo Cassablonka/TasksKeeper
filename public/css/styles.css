@@ -1,0 +1,158 @@
+html {
+  background-color: #E4E9FD;
+  background-image: -webkit-linear-gradient(65deg, #3d5a80 50%, #98c1d9 50%);
+  min-height: 1000px;
+  font-family: 'helvetica neue';
+}
+
+h1 {
+  font-family: "Trebuchet MS", sans-serif;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+h2{
+  color: #3d5a80;
+  margin-bottom: 4%;
+  padding: 4% 6%;
+  text-align: center;
+}
+
+.heading-box{
+  background-color: #3d5a80;
+  max-width: 400px;
+  margin: 100px auto 50px auto;
+  border-radius: 8px;
+  box-shadow: 5px 12px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.box {
+  padding-bottom: 15px;
+  padding-top: 5px;
+  max-width: 400px;
+  margin: 50px auto 0 auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.list{
+  font-size: 2.5vh;
+  font-family: 'helvetica neue';
+  background: transparent;
+  width: 75%;
+  padding: 2%;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  text-align: center;
+  margin-bottom: 6%;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.list:hover{
+  background-color: #3d5a80;
+  color: white;
+  cursor: pointer;
+}
+
+.item {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #F1F1F1;
+}
+
+.item:last-child {
+  border-bottom: 0;
+}
+
+.item p{
+  font-size: 2.8vh;
+}
+
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: #33658a;
+}
+
+input[type="checkbox"] {
+  margin: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 20px;
+  font-size: 2.5vh;
+  font-weight: 400;
+  color: #343a40;
+  font-family: "Verdana";
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  margin-left: 10px;
+}
+
+button {
+  min-height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: #3d5a80;
+  color: #fff;
+  font-size: 4vh;
+  padding-bottom: 6px;
+  border-width: 0;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+input[type="text"] {
+  text-align: center;
+  height: 60px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 2.8vh;
+  font-weight: 200;
+  width: 313px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #c5c3c6;
+  opacity: 1;
+  font-weight: 200;
+  font-family: "Verdana";
+}
+
+.dashboard{
+  border-radius: 5px;
+  margin: 2% auto;
+  border-color: transparent;
+  color: #3d5a80;
+  background-color: white;
+  font-size: 2.8vh;
+  font-weight: bold;
+  font-family: "Verdana";
+  padding-bottom: 6px;
+  border-width: 0;
+}
+
+.dashboard:hover{
+  cursor: pointer;
+  background-color: #3d5a80;
+  color: white;
+}
+
+footer p{
+  color: white;
+  font-weight: 200;
+}

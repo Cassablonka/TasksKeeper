@@ -1,0 +1,22 @@
+<%- include("partials/header") -%>
+
+<div class="heading-box" data-aos="zoom-in">
+  <h1>Personal List<br><%= today %></h1>
+</div>
+
+<div class="box">
+  <%  personalItems.forEach(function(personalItem){ %>
+      <div class="item">
+        <input type="checkbox" name="deleteItem">
+        <p><%= personalItem %></p>
+      </div>
+  <% }); %>
+
+  <form class="item" action="/personal" method="post">
+    <input type="text" name="newTask" placeholder="Create New Task" required>
+    <button type="submit">+</button>
+  </form>
+
+</div>
+
+<%- include("partials/footer")-%>

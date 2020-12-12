@@ -1,0 +1,21 @@
+<%- include("partials/header") -%>
+
+<div class="heading-box" data-aos="fade-right">
+  <h1>Work List<br><%= today %></h1>
+</div>
+
+<div class="box">
+  <%  workItems.forEach(function(workItem){ %>
+      <div class="item">
+        <input type="checkbox" name="deleteItem">
+        <p><%= workItem %></p>
+      </div>
+  <% }); %>
+
+  <form class="item" action="/work" method="post">
+    <input type="text" name="newTask" placeholder="Create New Task" required>
+    <button type="submit">+</button>
+  </form>
+</div>
+
+<%- include("partials/footer") -%>

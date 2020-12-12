@@ -1,0 +1,27 @@
+<%- include("partials/header") -%>
+
+<div class="heading-box">
+  <h1>Tasks Keeper</h1>
+</div>
+
+<div class="box">
+  <form class="" action="/" method="post">
+    <h2>Start managing your tasks !</h2>
+    <input type="submit" data-aos="top-top" class="list" name="personalList" value="Personal List"><br>
+    <input type="submit" data-aos="top-top" class="list" name="workList" value="Work List"><br>
+      <input type="submit" data-aos="top-top" class="list" name="miscellaneousList" value="Miscellaneous List">
+  </form>
+</div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 900,
+    once: true
+  });
+</script>
+</body>
+<footer>
+  <p>&copy; Cassablonka Pimpalapure</p>
+</footer>
+
+</html>

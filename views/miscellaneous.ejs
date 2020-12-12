@@ -1,0 +1,21 @@
+<%- include("partials/header") -%>
+
+<div class="heading-box" data-aos="fade-right">
+  <h1>Miscellaneous List<br><%= today %></h1>
+</div>
+
+<div class="box">
+  <%  miscellaneousItems.forEach(function(miscellaneousItem){ %>
+      <div class="item">
+        <input type="checkbox" name="deleteItem" >
+        <p><%= miscellaneousItem %></p>
+      </div>
+  <% }); %>
+
+  <form class="item" action="/miscellaneous" method="post">
+    <input type="text" name="newTask" placeholder="Create New Task" required>
+    <button type="submit">+</button>
+  </form>
+</div>
+
+<%- include("partials/footer") -%>
