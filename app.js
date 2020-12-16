@@ -1,3 +1,4 @@
+// Requiring all the packages
 const express = require("express");
 const bodyParser = require("body-parser");
 
@@ -10,6 +11,7 @@ app.use(bodyParser.urlencoded({
 
 app.set('view engine', 'ejs');
 
+// Getting the Date through inbuilt Javascript Functions
 const today = new Date();
 let options = {
   month: 'long',
@@ -19,10 +21,12 @@ let options = {
 
 const currentDay = today.toLocaleDateString("en-US", options);
 
+// Declaring the Constants
 const personal = ["Get Up","Meditate"];
 const work = ["Check Emails","Check Github"];
 const miscellaneous = ["Do some DIY", "Paint"];
 
+// Adding Routes to application
 app.get("/", function(req,res){
   res.render("home");
 });
@@ -85,7 +89,7 @@ app.post("/miscellaneous", function(req,res){
   res.redirect("/miscellaneous");
 });
 
-
+// Declaring the Server's Port Number
 app.listen(process.env.PORT || 3000, function() {
   console.log("This server is running on port number 3000.");
 });

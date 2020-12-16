@@ -1,3 +1,4 @@
+/* Body */
 html {
   background-color: #E4E9FD;
   background-image: -webkit-linear-gradient(65deg, #3d5a80 50%, #98c1d9 50%);
@@ -5,6 +6,7 @@ html {
   font-family: 'helvetica neue';
 }
 
+/* Headings */
 h1 {
   font-family: "Trebuchet MS", sans-serif;
   color: white;
@@ -19,6 +21,7 @@ h2{
   text-align: center;
 }
 
+/* Main Body Content */
 .heading-box{
   background-color: #3d5a80;
   max-width: 400px;
@@ -37,6 +40,8 @@ h2{
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
 
+
+/* Lists Content */
 .list{
   font-size: 2.5vh;
   font-family: 'helvetica neue';
@@ -95,6 +100,7 @@ form {
   margin-left: 10px;
 }
 
+/* Button */
 button {
   min-height: 50px;
   width: 50px;
@@ -133,6 +139,7 @@ input[type="text"]:focus {
   font-family: "Verdana";
 }
 
+/* Dashboard */
 .dashboard{
   border-radius: 5px;
   margin: 2% auto;
@@ -152,6 +159,7 @@ input[type="text"]:focus {
   color: white;
 }
 
+/* Footer */
 footer p{
   color: white;
   font-weight: 200;

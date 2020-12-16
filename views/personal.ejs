@@ -1,9 +1,12 @@
+<%# Adding Header Temlate %>
 <%- include("partials/header") -%>
 
+<!-- Title Heading -->
 <div class="heading-box" data-aos="zoom-in">
   <h1>Personal List<br><%= today %></h1>
 </div>
 
+<!-- Main List -->
 <div class="box">
   <%  personalItems.forEach(function(personalItem){ %>
       <div class="item">
@@ -19,4 +22,5 @@
 
 </div>
 
+<!-- Adding Footer Template -->
 <%- include("partials/footer")-%>

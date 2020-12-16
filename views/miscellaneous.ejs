@@ -1,9 +1,12 @@
+<%# Adding Header Temlate %>
 <%- include("partials/header") -%>
 
+<!-- Title Heading -->
 <div class="heading-box" data-aos="fade-right">
   <h1>Miscellaneous List<br><%= today %></h1>
 </div>
 
+<!-- Main List -->
 <div class="box">
   <%  miscellaneousItems.forEach(function(miscellaneousItem){ %>
       <div class="item">
@@ -18,4 +21,5 @@
   </form>
 </div>
 
+<!-- Adding Footer Template -->
 <%- include("partials/footer") -%>
